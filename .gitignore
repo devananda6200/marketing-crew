@@ -12,7 +12,5 @@ wheels/
 # Environment files
 .env
 
-
-
 # VS Code settings
 .vscode/
