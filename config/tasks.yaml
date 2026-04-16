@@ -1,0 +1,11 @@
+research_task:
+  description: >
+    Find 3-5 interesting and recent facts about {topic} as of year 2026.
+  expected_output: >
+    A bullet list of 3-5 facts
+
+blog_task:
+  description: >
+    Write a 100-word blog post summary about {topic} using the facts from the research.
+  expected_output: >
+    A blog post summary
