@@ -35,7 +35,7 @@ class TheMarketingCrew():
             tools=[
                 SerperDevTool(),
                 ScrapeWebsiteTool(),
-                DirectoryReadTool('resources/drafts'),
+                DirectoryReadTool('resources1/drafts'),
                 FileWriterTool(),
                 FileReadTool()
             ],
@@ -53,7 +53,7 @@ class TheMarketingCrew():
             tools=[
                 SerperDevTool(),
                 ScrapeWebsiteTool(),
-                DirectoryReadTool('resources/drafts'),
+                DirectoryReadTool('resources1/drafts'),
                 FileWriterTool(),
                 FileReadTool()
             ],
@@ -71,7 +71,7 @@ class TheMarketingCrew():
             tools=[
                 SerperDevTool(),
                 ScrapeWebsiteTool(),
-                DirectoryReadTool('resources/drafts/blogs'),
+                DirectoryReadTool('resources1/drafts/blogs'),
                 FileWriterTool(),
                 FileReadTool()
             ],
@@ -89,7 +89,7 @@ class TheMarketingCrew():
             tools=[
                 SerperDevTool(),
                 ScrapeWebsiteTool(),
-                DirectoryReadTool('resources/drafts'),
+                DirectoryReadTool('resources1/drafts'),
                 FileWriterTool(),
                 FileReadTool()
             ],
