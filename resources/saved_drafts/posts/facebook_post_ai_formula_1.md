@@ -1,1 +1,0 @@
-{ "content_type": "social media post", "topic": "AI in Excel", "target_audience": "SMEs", "tags": ["AI", "Excel", "Automation", "SME"], "content": "Struggling with complex Excel formulas? Our AI-powered tool can simplify formula creation and provide actionable insights. #ExcelAutomation #AI #SME" }

@@ -1,1 +1,0 @@
-{ "content_type": "social media post", "topic": "AI and Excel Industry News", "target_audience": "General Audience", "tags": ["AI", "Excel", "News", "Industry"], "content": "Stay updated with the latest trends in AI and Excel! Check out our feed for daily insights and news. #AI #Excel #Innovation #TechNews #SME" }

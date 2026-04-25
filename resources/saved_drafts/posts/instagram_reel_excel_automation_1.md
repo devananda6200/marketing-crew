@@ -1,1 +1,0 @@
-{ "content_type": "social media post", "topic": "Excel Automation", "target_audience": "SMEs", "tags": ["AI", "Excel", "Automation", "SME", "ExcelTips", "DataAnalysis"], "content": "Watch how our AI-powered Excel tool can transform your data analysis in seconds! [Link to Reel 1] #ExcelTips #AI #DataAnalysis" }

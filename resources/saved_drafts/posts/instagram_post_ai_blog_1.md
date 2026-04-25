@@ -1,1 +1,0 @@
-{ "content_type": "social media post", "topic": "AI in Excel", "target_audience": "SMEs", "tags": ["AI", "Excel", "Automation", "SME", "SmallBusiness"], "content": "Transform your Excel data with AI-powered automation! Learn more in our latest blog post. Link in bio! #AI #Excel #Automation #SME #SmallBusiness" }
