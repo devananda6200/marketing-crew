@@ -13,6 +13,7 @@ load_dotenv()
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "dev_secret_key_123")
 frontend_url = os.getenv("FRONTEND_URL")
+frontend_host = os.getenv("FRONTEND_HOST")
 allowed_origins = [
     "http://localhost:5173", 
     "http://localhost:5174", 
@@ -22,6 +23,8 @@ allowed_origins = [
 ]
 if frontend_url:
     allowed_origins.append(frontend_url)
+if frontend_host:
+    allowed_origins.append(f"https://{frontend_host}")
 
 # Enable credentials to allow session cookies to be sent from frontend
 CORS(app, supports_credentials=True, origins=allowed_origins)

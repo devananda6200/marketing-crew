@@ -8,11 +8,11 @@ services:
     envVars:
       - key: OPENROUTER_API_KEY
         sync: false
-      - key: FRONTEND_URL
+      - key: FRONTEND_HOST
         fromService:
           name: marketing-crew-web
           type: web
-          property: url
+          property: host
 
   # Frontend Static Site
   - type: web
@@ -21,8 +21,8 @@ services:
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
     envVars:
-      - key: VITE_API_URL
+      - key: VITE_API_HOST
         fromService:
           name: marketing-crew-api
           type: web
-          property: url
+          property: host
