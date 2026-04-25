@@ -12,14 +12,19 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "dev_secret_key_123")
-# Enable credentials to allow session cookies to be sent from frontend
-CORS(app, supports_credentials=True, origins=[
+frontend_url = os.getenv("FRONTEND_URL")
+allowed_origins = [
     "http://localhost:5173", 
     "http://localhost:5174", 
     "http://localhost:5175",
     "http://localhost:5176",
     "http://localhost:5177"
-])
+]
+if frontend_url:
+    allowed_origins.append(frontend_url)
+
+# Enable credentials to allow session cookies to be sent from frontend
+CORS(app, supports_credentials=True, origins=allowed_origins)
 
 # In-memory token storage (In production, use a database)
 TOKENS = {

@@ -1,0 +1,28 @@
+services:
+  # Backend Web Service
+  - type: web
+    name: marketing-crew-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn marketing-crew2.server:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: FRONTEND_URL
+        fromService:
+          name: marketing-crew-web
+          type: static
+          property: url
+
+  # Frontend Static Site
+  - type: static
+    name: marketing-crew-web
+    env: node
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          name: marketing-crew-api
+          type: web
+          property: url

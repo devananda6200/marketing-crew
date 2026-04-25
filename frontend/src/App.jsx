@@ -3,7 +3,8 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import './index.css'
 
-const API_URL = "http://localhost:5000/api"
+const rawApiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000/api"
+const API_URL = rawApiUrl.endsWith('/api') ? rawApiUrl : `${rawApiUrl}/api`
 
 const SECTION_META = {
   market_research: {
