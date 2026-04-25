@@ -1,4 +1,6 @@
-# CrewAI Marketing Automation Tutorial
+https://marketing-crew.onrender.com/
+
+# CrewAI Marketing Automation 
 
 This repository demonstrates a multi‑agent marketing workflow built with **CrewAI**, **Gemini**, and **Serper** tools. The crew automates:
 
